@@ -9,6 +9,14 @@ public class ListaLigada {
     }
     private Celula cabeca;
     private Celula cauda;
+    private int tamanho;
+    
+    public int getTamanho() {
+        return tamanho;
+    }
+    public void setTamanho(int tamanho) {
+        this.tamanho = tamanho;
+    }
     public Celula getCabeca() {
         return cabeca;
     }
@@ -21,6 +29,7 @@ public class ListaLigada {
     public void setCauda(Celula cauda) {
         this.cauda = cauda;
     }
+    
 
     
     
@@ -36,6 +45,7 @@ public class ListaLigada {
             cauda = novaCelula;
 
         }
+        this.tamanho++;
 
 
     }
@@ -50,11 +60,23 @@ public class ListaLigada {
             novaCelula.setProxima(cabeca);
             cabeca = novaCelula;
         }
+        this.tamanho++;
 
     }
 
-    public void inserirPorPosicao(int valor){
+    public void inserirPorPosicao(int valor, int posicao){
+        Celula novaCelula = new Celula(valor);
 
+        if (posicao == 0){
+            inserir(valor);
+        }else{
+            Celula prx = cabeca;
+            for(int i=0;i<posicao-1;i++ ){
+                prx = prx.getProxima();
+            }
+            novaCelula.setProxima(prx.getProxima());
+            prx.setProxima(novaCelula);
+        }
     }
 
     public void imprimirLista(){
