@@ -22,4 +22,6 @@ public class Ex2 {
 
         System.out.println("Soma dos números do vetor: " + resultado);
 
-        scanner.close();}}
+        scanner.close();
+    }
+}

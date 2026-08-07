@@ -16,7 +16,7 @@ public class Questao4 {
             
         }
         //Para saber se é primo ou não.
-        
+        scanner.close();
     }
     
 }

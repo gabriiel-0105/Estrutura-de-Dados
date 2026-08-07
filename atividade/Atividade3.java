@@ -25,5 +25,7 @@ public class Atividade3 {
         else if (media < 5) {
             System.out.println(nome + ", você foi reprovado, e sua média foi: " + media + "pontos");
             }   
+            scanner.close();
         }
+        
     }
