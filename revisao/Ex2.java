@@ -1,7 +1,7 @@
 package revisao;
 
 import java.util.Scanner;
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class Ex2 {
     public static void main(String[] args) {

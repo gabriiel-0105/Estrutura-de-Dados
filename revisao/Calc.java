@@ -1,6 +1,6 @@
 package revisao;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class Calc {
     public int somar(int[] num) {
